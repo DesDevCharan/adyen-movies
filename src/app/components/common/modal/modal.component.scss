@@ -10,7 +10,7 @@
   left: 0;
   text-align: left;
   background: rgba(0, 0, 0, .8);
-  transition: opacity .25s ease;
+  transition: opacity 2s ease;
   z-index: 4;
 }
 
@@ -95,15 +95,16 @@
 .modal__content {
   display: flex;
   flex-direction: column;
-  height: 99%;
+  height: 100%;
 
   span,
   p {
     color: $red;
+    font-size: 12px;
   }
 
   .modal__content__bg {
-    height: 50%;
+    height: 60%;
     background-image: url(https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -128,55 +129,59 @@
     div {
       position: absolute;
       bottom: 3rem;
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: 600;
       color: $red;
     }
   }
 
   .modal__content__info {
-    height: 5%;
+    // height: 5%;
     width: 100%;
     display: flex;
     align-items: center;
 
     .modal__content__info__left {
-      flex: 2 2 0;
-      font-size: 18px;
+      flex: 1 1 0;
+      // font-size: 18px;
       display: flex;
 
       div {
         margin: 0 20px;
         text-transform: uppercase;
-        padding: 10px;
+        padding: 5px;
         background: $icon-color;
         color: black;
         border-radius: 4px;
         min-width: 60px;
         text-align: center;
       }
+
+      .modal__content__year {
+        margin-left: 0;
+      }
     }
 
     .modal__content__info__right {
       flex: 1 1 0;
-      font-size: 18px;
+      // font-size: 18px;
       margin-left: 55px;
     }
   }
 
   .modal__content__plot {
-    height: 25%;
+    // height: 25%;
     width: 100%;
     display: flex;
-    font-size: 2rem;
+    // font-size: 2rem;
 
     div {
-      flex: 2 2 0;
+      flex: 1 1 0;
     }
 
     .modal__content__plot__right {
-      padding: 30px;
-      font-size: 18px;
+      // padding: 30px;
+      // font-size: 18px;
       flex: 1 1 0;
 
       div {
@@ -186,15 +191,15 @@
   }
 
   .modal__content__more {
-    height: 20%;
+    // height: 20%;
     width: 100%;
-    font-size: 18px;
+    // font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     div {
-      padding: 25px 0;
+      padding: 5px 0;
     }
   }
 }

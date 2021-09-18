@@ -2,14 +2,14 @@
 
 .movies-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 50px;
   padding: 50px;
   place-items: center;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   color: $white;
