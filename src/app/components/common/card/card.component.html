@@ -1,0 +1,22 @@
+<div class="movie">
+  <div class="movie-img" [ngStyle]="{'background-image': 'url(' + data?.Poster + ')'}"></div>
+  <div class="text-movie-cont">
+    <div class="mr-grid">
+      <div class="col1">
+        <h1 class="title">{{data?.Title}}</h1>
+        <ul class="movie-gen">
+          <li>{{data?.Type}}</li>
+          <li> / {{data?.Year}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <label for="modal-1">
+    <div class="go-corner" (click)="openModal()">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </label>
+
+</div>

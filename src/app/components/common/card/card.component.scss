@@ -1,0 +1,122 @@
+@import '../../../../styles/variables.scss';
+
+.movie-img {
+  width: 100%;
+  height: 380px;
+  background-image: url(https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  mask-image: -webkit-gradient(linear, left top, left bottom,
+      color-stop(0.00, rgba(0, 0, 0, 1)),
+      color-stop(0.35, rgba(0, 0, 0, 1)),
+      color-stop(0.50, rgba(0, 0, 0, 1)),
+      color-stop(0.65, rgba(0, 0, 0, 1)),
+      color-stop(0.85, rgba(0, 0, 0, 0.6)),
+      color-stop(1.00, rgba(0, 0, 0, 0)));
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+      color-stop(0.00, rgba(0, 0, 0, 1)),
+      color-stop(0.35, rgba(0, 0, 0, 1)),
+      color-stop(0.50, rgba(0, 0, 0, 1)),
+      color-stop(0.65, rgba(0, 0, 0, 1)),
+      color-stop(0.85, rgba(0, 0, 0, 0.6)),
+      color-stop(1.00, rgba(0, 0, 0, 0)));
+
+  position: relative;
+
+}
+
+.movie {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, rgba(30, 27, 38, 1) 55%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, rgba(30, 27, 38, 1) 55%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, rgba(30, 27, 38, 1) 55%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#1e1b26', GradientType=0);
+  /* IE6-9 */
+
+  position: relative;
+  background-size: contain;
+  background-size: cover;
+  z-index: 1;
+  width: 600px;
+  height: 500px;
+  display: block;
+  border-radius: 4px;
+  color: $icon-color;
+
+  &:hover {
+    box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+    transition: all 0.2s ease-out;
+    // border: 1px solid $icon-color;
+    // top: -4px;
+    transform: scale(1.2);
+    z-index: 3;
+  }
+}
+
+.text-movie-cont {
+  padding: 0px 12px;
+  text-align: justify;
+
+  .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.movie-gen {
+  margin: 0px;
+  padding: 0px;
+
+  li {
+    font-family: $paragraph-font-family;
+    font-size: $text-summary;
+    width: auto;
+    display: block;
+    float: left;
+    margin-right: 6px;
+    font-weight: $semi-bold;
+    text-transform: capitalize;
+  }
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  background-color: $white;
+  border-radius: 50%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: $red;
+  font-family: courier, sans;
+}
+
+@media only screen and (max-width: 700px) {
+  .movie {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .movie {
+    width: 250px;
+  }
+}

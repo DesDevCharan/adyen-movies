@@ -1,27 +1,23 @@
 # AdyenMovies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+The Project is deployed @ 
 
-## Development server
+The Project uses following technologies
+- Angular as the UI Framework
+- Typescript for clean code
+- CSS3 and SCSS for stylings
+- tslint for Coding practices
+- Jasmine + Karma based testing 
+- Webpack based build
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## To run Locally
 
-## Code scaffolding
+1. `npm i`
+2. `npm start`
+3. To generate the build output `npm run build `
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Things to improve
+- Code coverage toolings like sonarqube
+- Unit Tests
+- Theme support (Light + Dark)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

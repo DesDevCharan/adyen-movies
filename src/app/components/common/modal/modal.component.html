@@ -1,0 +1,40 @@
+<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal">
+  <label class="modal__bg" for="modal-1"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="modal-1"></label>
+    <div class="modal__content">
+      <div class="modal__content__bg" [ngStyle]="{'background-image': 'url(' + movie?.Poster + ')'}">
+        <div class="modal__content__title py4"> {{movie?.Title}}</div>
+      </div>
+      <div class="modal__content__info py4">
+        <div class="modal__content__info__left">
+          <div class="modal__content__year"> {{movie?.Year}}</div>
+          <div class="modal__content__censor">{{movie?.Rated}} </div>
+          <div class="modal__content__runtime">{{movie?.Runtime}}</div>
+        </div>
+        <div class="modal__content__info__right">
+          <div class="modal__content__imdb"><span>IMDB:</span> {{movie?.imdbRating}}</div>
+        </div>
+      </div>
+      <div class="modal__content__plot py4">
+        <div class="modal__content__plot__left">
+          <div class="modal__content__description">
+            <p>Plot: </p>
+            {{movie?.Plot}}
+          </div>
+        </div>
+        <div class="modal__content__plot__right">
+          <div class="modal__content__director"><span> Director:</span> {{movie?.Director}} </div>
+          <div class="modal__content__cast"><span>Cast:</span> {{movie?.Actors}}</div>
+          <div class="modal__content__genre"><span>Genre:</span> {{movie?.Genre}}</div>
+        </div>
+      </div>
+      <div class="modal__content__more py4">
+        <div class="modal__content__awards"><span>Awards:</span> {{movie?.Awards}}</div>
+        <div class="modal__content__bo"><span>Box Office:</span> {{movie?.BoxOffice}}</div>
+        <div class="modal__content__production"><span>Production:</span> {{movie?.Production}}</div>
+      </div>
+    </div>
+  </div>
+</div>

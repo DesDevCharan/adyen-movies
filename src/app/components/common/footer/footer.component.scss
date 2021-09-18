@@ -1,0 +1,28 @@
+@import '../../../../styles/variables.scss';
+
+footer {
+  background-color: $search-bg-color;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 25px;
+      margin: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

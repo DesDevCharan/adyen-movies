@@ -1,0 +1,28 @@
+@import '../../../../styles/variables.scss';
+
+header {
+  background-color: $search-bg-color;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  right: 0px;
+  overflow: hidden;
+
+  p {
+    flex: 1 1 0;
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+    margin-left: 5rem;
+    color: $red;
+  }
+
+  ad-search {
+    flex: 3 3 0;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+  }
+}

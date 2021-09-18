@@ -1,0 +1,5 @@
+<h1>Searching for: {{term | uppercase}}</h1>
+<div class="movies-wrapper">
+  <ad-card *ngFor="let movie of movies" [data]='movie'></ad-card>
+</div>
+<ad-modal></ad-modal>
