@@ -22,4 +22,5 @@ The Project uses following technologies
 - Theme support (Light + Dark)
 - Pagination
 - Loading Bar / Placeholder
+- Star Rating CSS
 
