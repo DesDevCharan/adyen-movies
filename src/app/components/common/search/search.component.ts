@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
   }
 
   toggleSearch() {
-    if (this.open) {
+    if (this.open && this.searchTerm) {
       this.api.emitSearchTerm(this.searchTerm);
     }
     this.open = !this.open;

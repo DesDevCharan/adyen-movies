@@ -20,4 +20,6 @@ The Project uses following technologies
 - Code coverage toolings like sonarqube
 - Unit Tests
 - Theme support (Light + Dark)
+- Pagination
+- Loading Bar / Placeholder
 
