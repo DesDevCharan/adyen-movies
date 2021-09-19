@@ -1,6 +1,6 @@
 # AdyenMovies
 
-The Project is deployed @ 
+The Project is deployed @ https://desdevcharan.github.io/moviz/
 
 The Project uses following technologies
 - Angular as the UI Framework
